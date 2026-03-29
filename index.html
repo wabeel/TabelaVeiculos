@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Concessionária Gold | Vendas </title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: aliceblue;
+            color: #222;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;          
+        }
+        p.descricao {
+            text-align: center;
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 30px;
+        }
+        .imagem-topo {
+            display: block;
+            margin: 0 auto 20px auto;
+            width: 180px;
+            height: auto;
+            border-radius: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: #fff;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+        thead {
+            background-color: #e7edf2;
+            font-weight: bold;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #eff5fa;
+        }
+        tfoot td {
+            background-color: #e7edf2;
+            font-weight: bold;
+            font-style: italic;
+            text-align: center;
+        }
+        .col-marca {
+            width: 30%;
+        }
+        .col-modelo {
+            width: 40%;
+        }
+        .col-ano {
+            width: 30%;
+        }
+        .imagem-carros  {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .imagem-carros img {
+            width: 80px;
+            height: auto;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+         .rodape-imagem {
+            display: block;
+            margin: 30px auto 0 auto;
+            width: 150px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class ="container">
+        <img class="imagem-topo" src="./img/crolla.jpg" alt="Corolla Híbrido 2025">
+        <h1>Modelos de carros em estoque | Vendas </h1>
+        <p class="descricao">
+            Tabelas de veiculos disponíveis em estoque, multimarcas!
+        </p>
+        <table>
+            <thead>
+                <tr>
+                    <th class="col-marca">Marca</th>
+                    <th class="col-modelo">Modelo</th>
+                    <th class="col=ano">Ano</th>
+                    
+                </tr>
+            </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">Toyota</td>
+                        <td>
+                            <div class ="imagem-carros">
+                                <img src="./img/crolla.jpg" alt="Corolla Híbrido 2025">
+                                <span> Corolla </span>
+                            </div>
+                        </td>
+                        <td>2025</td>
+                    </tr>
+                    <tr>
+                     <td>
+                            <div class ="imagem-carros">
+                                <img src="./img/camry.webp" alt="Camry 2025">
+                                <span> Camry </span>
+                            </div>
+                        </td>
+                        <td>2024</td>
+                    </tr>
+                    <!-- fim toyota -->
+                     <!--Honda inicio-->
+                     <tr>
+                        <td rowspan="2">Honda</td>
+                        <td>
+                            <div class ="imagem-carros">
+                                <img src="./img/city.jpg" alt="City 2025">
+                                <span> City </span>
+                            </div>
+                        </td>
+                        <td>2025</td>
+                    </tr>
+                    <tr>
+                     <td>
+                            <div class ="imagem-carros">
+                                <img src="./img/civic.jpg" alt="Civic 2023">
+                                <span> Civic </span>
+                            </div>
+                        </td>
+                        <td>2023</td>
+                    </tr>
+                    <!-- fim honda -->
+                    
+                     <!--Fiat inicio-->
+                     <tr>
+                        <td>Fiat</td>
+                        <td>
+                            <div class ="imagem-carros">
+                                <img src="./img/fiat-500-2014.jpg" alt="Fiat 500 2014">
+                                <span> Fiat 500 </span>
+                            </div>
+                        </td>
+                        <td>2014</td>
+                    </tr>
+
+                    <!-- fim Fiat -->
+                     <!--inicio Mercedes-->
+                      <tr>
+                        <td>Mercedes</td>
+                        <td>
+                            <div class ="imagem-carros">
+                                <img src="./img/mercedes-2024.jpg" alt="Mercedes 2024">
+                                <span> Mercedes </span>
+                            </div>
+                        </td>
+                        <td>2024</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Ultima artualização: 27/03/2026 </td>
+                    </tr>
+                </tfoot>                                         
+        </table>
+        <img class="rodape-imagem" src="./img/logo-carro.jpg" alt="Logo da Concessionária Gold">
+
+    </div>
+    
+</body>
+</html>
